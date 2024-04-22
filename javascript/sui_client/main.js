@@ -8,10 +8,10 @@ const suiUtils = require("@mysten/sui.js/utils");
 const { bcs } = require("@mysten/bcs");
 
 const PullServiceClient = require("./pullServiceClient");
+const pairIndexes = [408];
 
 async function main() {
   const address = "mainnet-dora.supraoracles.com"; // Set the gRPC server address
-  const pairIndexes = [185]; // Set the pair indexes as an array
   const chainType = "sui";
 
   const client = new PullServiceClient(address);
